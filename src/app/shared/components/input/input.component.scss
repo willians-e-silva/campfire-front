@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+    @apply 
+        outline-none 
+        bg-richblack-300 
+        border-richblack-200 
+        border-2 
+        rounded-md 
+        py-1 
+        pl-2 
+        placeholder-richblack-200 
+        font-jakarta 
+        text-gainsboro-500 
+        w-full;
+}
