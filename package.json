@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "component": "ng generate component app/shared/components/",
+    "generate-component": "./scripts/generate-component.sh",
+    "generate-page": "./scripts/generate-page.sh",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
