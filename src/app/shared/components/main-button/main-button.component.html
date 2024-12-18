@@ -1,0 +1,11 @@
+@if(type == 'text'){
+  <button class='w-full h-[42px] {{bgColor}} rounded text-xl'>
+    {{text}}
+  </button>
+}
+
+@if (type == 'image') {
+  <button class='w-full h-[42px] {{bgColor}} rounded text-xl flex items-center justify-center'>
+    <img src="{{image}}" alt="Google" class="h-full py-1">
+  </button>
+}

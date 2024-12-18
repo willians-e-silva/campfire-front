@@ -1,35 +1,45 @@
 <main class="justify-center flex font-jakarta font-bold">
-    <section>
+    <section >
         <form>
-            <fieldset>
-                <legend class="text-gainsboro-500 flex items-center justify-center text-center">
-                    <img src="/logo.svg" alt="Logo" class="pr-1">
-                    <h1 class="text-royalorange-500 text-6xl font-bold">Camp Fire</h1>
+            <fieldset >
+                <legend class="mt-8 w-[390px]">
+                    <app-title></app-title>
                 </legend>
-                    <label for="username" class="text-gainsboro-500">Login</label><br/>
+                <div class="mt-6">
                     <app-input
-                      id="username"
-                      name="username"
-                      type="text"
-                      placeholder="Email ou usuário"
-                      ></app-input><br />
-                    <!-- <input type="text" id="username" class="mt-1 mb-2" name="username"><br/> -->
-
-                    <label for="password" class="text-gainsboro-500">Senha</label><br/>
-                    <app-input
-                      id="username"
-                      name="username"
-                      class="w-full flex"
-                      type="password"
-                      placeholder="Senha">
+                        id="username"
+                        name="username"
+                        label="Login:"
+                        type="text"
+                        placeholder="Email ou usuário">
                     </app-input>
-                    <!-- <input class="mt-[122px]" type="password" id="password" name="password"><br/> -->
-                
-                    <div class="text-gainsboro-500"><a href="#">Esqueceu a senha?</a></div>
+                </div>
+                <div class="mt-6">
+                    <app-input
+                        id="username"
+                        name="username"
+                        label="Senha:"
+                        type="password"
+                        placeholder="Senha">
+                    </app-input>
+                </div>
             </fieldset>
+
+            <a class="text-gainsboro-500" href="#">Esqueceu a senha?</a>
+            <!-- <img src="/logo.svg" alt="Logo" class="height-[90px] pr-2"> -->
             <div>
-                <button type="button" class="text-gainsboro-500">Google</button>
-                <button type="submit" class="text-gainsboro-500">Entrar</button>
+                <app-main-button
+                    text="Entrar"
+                    bgColor="bg-royalorange-500"
+                    textColor="text-gainsboro-500"
+                    type="text">
+                </app-main-button>
+                <app-main-button
+                    bgColor="bg-richblack-400"
+                    textColor="text-gainsboro-500"
+                    image="/assets/google.svg"
+                    type="image">
+                </app-main-button>
             </div>
         </form>
         <footer>
