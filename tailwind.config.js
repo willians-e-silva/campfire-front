@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     colors: {
       richblack: {
-          100: "#cecfd1",
+          100: "#41464D",
           200: "#494D54",
           300: "#1B2129",
           400: "#121820",

@@ -11,4 +11,5 @@ export class MainButtonComponent {
   @Input() bgColor: string = '';
   @Input() type: string = '';
   @Input() image: string = '';
+  @Input() borderOptions: string = '';
 }
