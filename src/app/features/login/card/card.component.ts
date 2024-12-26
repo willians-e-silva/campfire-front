@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import { TitleComponent } from '@components/title/title.component';
-import { LoginFormComponent } from '@app/features/login/card/login-form/login-form.component'
-import { LoginSignComponent } from '@app/features/login/card/login-sign/login-sign.component'
-
+import { LoginComponent } from '@app/features/login/card/login/login.component'
 @Component({
-  selector: 'component-card',
-  imports: [TitleComponent, LoginFormComponent, LoginSignComponent],
+  selector: 'login-component-card',
+  imports: [LoginComponent],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
 
-export class CardComponent {
+export class LoginCardComponent {
 }

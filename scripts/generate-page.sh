@@ -22,6 +22,6 @@ for file in src/app/pages/$npm_config_name/*; do
   sed -i "s/app-$npm_config_name/page-$npm_config_name/g" "$file"
   
   # Substitui LoginComponent por LoginPage
-  capitalized_name="$(tr '[:lower:]' '[:upper:]' <<< ${npm_config_name:0:1})${npm_config_name:1}"
-  sed -i "s/${capitalized_name}Component/${capitalized_name}Page/g" "$file"
+  # capitalized_name="$(tr '[:lower:]' '[:upper:]' <<< ${npm_config_name:0:1})${npm_config_name:1}"
+  # sed -i "s/${capitalized_name}Component/${capitalized_name}Page/g" "$file"
 done
